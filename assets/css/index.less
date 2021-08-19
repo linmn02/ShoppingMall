@@ -1,0 +1,245 @@
+/* banner */
+.banner{
+    width:100%;
+    img{
+        width: 100%;
+    }
+}
+
+/* 菜单 */
+.meau{
+    .title{
+        font-size: 2em;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1em 0em;
+    }
+    .meaulist{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+        .list{
+            width: 17%;
+            padding-bottom: 1em;
+            .thumb{
+                margin-bottom: .5em;
+                img{
+                    background: #f6f6f6;
+                    border-radius: 100%;
+                }
+            }
+            .name{
+                color: #000;
+                font-size: 11px;
+            }
+        }
+    }
+
+    @media screen and(max-width:1024px) and(min-width:768px){
+        &{
+            .meaulist{
+                .list{
+                    .name{
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:320px) {
+        &{
+            .meaulist{
+                .list{
+                    .name{
+                        font-size: 9px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 优惠券 */
+.coupon{
+    padding: 1em 0em;
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .title{
+            font-size: 1.3em;
+            padding-left: 12px;
+            border-left: 3px solid #001c58;
+            // border-radius: 2px;
+            font-weight: bold;
+            color: #333333;
+        }
+        .more{
+            font-size: 1.1em;
+            color: #b2b5bf;
+        }
+    }
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 1em 0em;
+        .item{
+            width: 48%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: #d9ecf2;
+            padding: 1em ;
+            margin-bottom: 1em;
+            .left{
+                // width: 48%;
+                font-size: 15px;
+                
+                .price{
+                    font-size: 30px;
+                }
+            }
+            .right{
+                width: 50%;
+                font-size: 12px;
+            }
+            &:first-child{
+                background: #fde8d7;
+            }
+        }
+    }
+
+    @media screen and(max-width:320px){
+        &{
+            .bottom{
+                .item{
+                    .right{
+                        font-size: 9px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 商品列表 */
+.commodity{
+    nav{
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                width: 25%;
+                text-decoration: none;
+                padding: 15px;
+                font-weight: bold;
+                text-align: center;
+                font-size: 16px;
+            }
+            .act{
+                color: #143e74;
+            }
+        }
+    }
+
+    #commoditylist{
+        .tab{
+            .pack{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                // text-align: center;
+                .list{
+                    width: 48%;
+                    .thumb{
+                        width: 100%;
+                        img{
+                            width: 100%s;
+                        }
+                    }
+                    .content{
+                       padding: 10px 15px;
+                       color: #000;
+                        .title{
+                            font-size: 20px;
+                            font-weight: bold;
+                            color: #333333;
+                        }
+                        .remarks{
+                            font-size: 16px;
+                            color: #a7abaf;
+                            padding: 3px 0px;
+                        }
+                        .seckill{
+                            width: 80px;
+                            height: 25px;
+                            line-height: 25px;
+                            border-radius: 5px;
+                            background: #fef4ec;
+                            text-align: center;
+                            color:#f7be8c;
+                        }
+                        .price{
+                            font-size: 22px;
+                            color:#1a3f6b;
+                            font-weight: bold;
+                        }
+                        .oprice{
+                            font-size: 18px;
+                            color: #cdcfd3;
+                            padding-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and(max-width:1024px) and(min-width:768px){
+        &{
+            nav{
+                ul{
+                    li{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:320px){
+        &{
+            nav{
+                ul{
+                    li{
+                        font-size: 14px;
+                    }
+                }
+            }
+            #commoditylist{
+                .tab{
+                   .pack{
+                       .list{
+                           .content{
+                               .title{
+                                font-size: 17px;
+                               }
+                               .remarks{
+                                   font-size: 14px;
+                               }
+                               .seckill{
+                                   font-size: 14px;
+                               }
+                               .price{
+                                   font-size: 16px;
+                               }
+                           }
+                       }
+                   } 
+                }
+            }
+        }
+    }
+}

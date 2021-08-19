@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <!-- 重置样式 -->
+    <link rel="stylesheet/less" href="./assets/css/reset.less" />
+
+    <!-- 公共样式 -->
+    <link rel="stylesheet/less" href="./assets/css/common.less" />
+
+    <!-- 页面独立的 -->
+    <link rel="stylesheet/less" href="./assets/css/mine.less" />
+
+    <link rel="stylesheet" href="./assets/layui/css/layui.css">
+</head>
+<body>
+    <div class="mine">
+        <div class="container">
+            <div class="top">
+                <div class="information">
+                   <div class="col-md-2 col-sm-3 col-xs-4">
+                       <img src="./assets/images/mine-icon.png" />
+                   </div>
+                   <div class="col-md-10 col-sm-9 col-xs-8 content">
+                       <h5 class="name">赵老三<i class="glyphicon glyphicon-edit"></i></h5>
+                       <span class="account">ID：6688286</span>
+                   </div>
+                </div>
+            </div>
+            <div class="numlist">
+                <div class="item">
+                    <p class="num">38</p>
+                    <span class="name">余额</span>
+                </div>
+                <div class="item">
+                    <p class="num">128</p>
+                    <span class="name">积分</span>
+                </div>
+                <div class="item">
+                    <p class="num">22</p>
+                    <span class="name">收藏</span>
+                </div>
+                <div class="item">
+                    <p class="num">6</p>
+                    <span class="name">优惠</span>
+                </div>
+            </div>
+            <div class="banner">
+                <img src="./assets/images/mine-banner.png" />
+            </div>
+        </div>
+    </div>
+
+
+     <!-- 订单 -->
+     <div class="order">
+          <div class="container">
+              <div class="top">
+                <p class="title">我的订单</p>
+                <p class="more">查看更多订单&gt;</p>
+              </div>
+              <div class="bottom">
+                  <div class="list">
+                      <div class="thumb">
+                          <img src="./assets/images/order-icon1.png" />
+                      </div>
+                      <p class="title">待付款</p>
+                  </div>
+                  <div class="list">
+                      <div class="thumb">
+                          <img src="./assets/images/order-icon2.png" />
+                      </div>
+                      <p class="title">待发货</p>
+                  </div>
+                  <div class="list">
+                      <div class="thumb">
+                          <img src="./assets/images/order-icon3.png" />
+                      </div>
+                      <p class="title">待收货</p>
+                  </div>
+                  <div class="list">
+                      <div class="thumb">
+                          <img src="./assets/images/order-icon4.png" />
+                      </div>
+                      <p class="title">待评价</p>
+                  </div>
+                  <div class="list">
+                      <div class="thumb">
+                          <img src="./assets/images/order-icon5.png" />
+                      </div>
+                      <p class="title">退货中</p>
+                  </div>
+              </div>
+          </div>      
+    </div>
+
+    <!-- 广告 -->
+    <div class="advert">
+        <div class="container">
+            <div class="item">
+                <div class="content">
+                    <p class="title">我的微店</p>
+                    <p class="info">免费入驻送礼</p>
+                </div>
+                <div class="thumb">
+                    <img src="./assets/images/advert-img1.png" />
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <p class="title">酒店预约</p>
+                    <p class="info">预定立减20元</p>
+                </div>
+                <div class="thumb">
+                    <img src="./assets/images/advert-img2.png" />
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="morelist">
+        <div class="container">
+            <div class="list">
+                <div class="left">
+                    <span class="icon layui-icon layui-icon-location"></span>
+                    <span class="info">收货地址</span>
+                </div>
+                <span class="more">&gt;</span>
+            </div>
+            <div class="list">
+                <div class="left">
+                    <span class="icon layui-icon layui-icon-star"></span>
+                    <span class="info">我的收藏</span>
+                </div>
+                <span class="more">&gt;</span>
+            </div>
+            <div class="list">
+                <div class="left">
+                    <span class="icon layui-icon layui-icon-set"></span>
+                    <span class="info">设置</span>
+                </div>
+                <span class="more">&gt;</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="list">
+            <a href="./index.html" class="item">
+                <i class="icon layui-icon layui-icon-home"></i>
+                <p class="title">首页</p>
+            </a>
+            <a href="./classify.html" class="item">
+                <i class="icon layui-icon layui-icon-app"></i>
+                <p class="title">分类</p>
+            </a>
+            <a href="./trolley.html" class="item">
+                <i class="icon layui-icon layui-icon-cart"></i>
+                <p class="title">购物车</p>
+            </a>
+            <a href="./mine.html" class="item">
+                <i class="icon layui-icon layui-icon-user"></i>
+                <p class="title">我的</p>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
+<!-- 解析less的文件 -->
+<script src="./assets/js/less.min.js"></script>
+
+<!-- jquery  -->
+<script src="./assets/js/jquery.min.js"></script>
+
+<!-- bootstrap -->
+<script src="./assets/js/bootstrap.min.js"></script>
+
+<script src="./assets/layui/layui.js"></script>
